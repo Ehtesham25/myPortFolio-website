@@ -27,7 +27,7 @@ const Header = () => (
         >
           <DiCssdeck size="3rem" />
           <NavLink>
-            <strong style={{color:'grey'}}>EhtishaM Ul HaQ</strong>
+            <strong style={{ color: "grey" }}>EhtishaM Ul HaQ</strong>
           </NavLink>
         </a>
       </Link>
@@ -55,13 +55,25 @@ const Header = () => (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons color="#24292E" href="https://google.com">
+      <SocialIcons
+        color="#24292E"
+        target="_blank"
+        href="https://github.com/Ehtesham25"
+      >
         <AiFillGithub size="2.7rem" />
       </SocialIcons>
-      <SocialIcons color="#0073B2" href="https://google.com">
+      <SocialIcons
+        color="#0073B2"
+        href="https://www.linkedin.com/in/ehtisham-ul-haq-b92872161/"
+        target="_blank"
+      >
         <AiFillLinkedin size="2.7rem" />
       </SocialIcons>
-      <SocialIcons color="#1877F2" href="https://google.com">
+      <SocialIcons
+        color="#1877F2"
+        target="_blank"
+        href="https://www.facebook.com/ehtesham.ulhaq.503"
+      >
         <SiFacebook size="2.7rem" />
       </SocialIcons>
     </Div3>
