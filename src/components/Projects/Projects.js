@@ -11,7 +11,7 @@ import {
   TagList,
   TitleContent,
   UtilityList,
-  Img
+  Img,
 } from "./ProjectsStyles";
 import {
   Section,
@@ -29,7 +29,7 @@ const Projects = () => (
       {projects.map((p, i) => {
         return (
           <BlogCard key={i}>
-            <Image alt="" src={p?.image} layout={p?.id===3 && 'fill'} style={{ width: 90, height: 5, objectFit:'cover',overFlow:'hidden' }} />
+            <Img alt="Failed to Load" src={p?.image} />
             <TitleContent>
               <HeaderThree title>{p.title}</HeaderThree>
               <Hr />
