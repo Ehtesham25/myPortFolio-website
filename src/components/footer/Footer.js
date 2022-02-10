@@ -3,57 +3,45 @@ import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 
 import { SocialIcons } from "../Header/HeaderStyles";
 import {
-  CompanyContainer,
   FooterWrapper,
-  LinkColumn,
-  LinkItem,
   LinkList,
-  LinkTitle,
-  Slogan,
   SocialContainer,
   SocialIconsContainer,
   ExternalLinks,
   UtilityList,
 } from "./FooterStyles";
+import { SectionTitle } from "../../styles/GlobalComponents";
 
 const Footer = () => {
   return (
-    <FooterWrapper>
-      <LinkList>
-        {/* <LinkColumn>
-          <LinkTitle>Call</LinkTitle>
-          <LinkItem href="tel:314-343-3432">314-343-3432</LinkItem>
-        </LinkColumn> */}
-        <UtilityList>
-          <ExternalLinks href='tel:314-343-3432'>Code</ExternalLinks>
-        </UtilityList>
-        <UtilityList>
-          <ExternalLinks href='mailto:contact@jsmastery.com'>Code</ExternalLinks>
-        </UtilityList>
-        {/* <LinkColumn>
-          <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto:contact@jsmastery.com">
-            contact@jsmastery.com
-          </LinkItem>
-        </LinkColumn> */}
-      </LinkList>
-      <SocialIconsContainer>
-        <CompanyContainer>
-          <Slogan>Innovating one project at a time</Slogan>
-        </CompanyContainer>
-        <SocialContainer>
-          <SocialIcons href="https://google.com">
-            <AiFillGithub size="3rem" />
-          </SocialIcons>
-          <SocialIcons href="https://google.com">
-            <AiFillLinkedin size="3rem" />
-          </SocialIcons>
-          <SocialIcons href="https://google.com">
-            <AiFillInstagram size="3rem" />
-          </SocialIcons>
-        </SocialContainer>
-      </SocialIconsContainer>
-    </FooterWrapper>
+    <>
+      <SectionTitle style={{ paddingLeft: "100px",paddingTop:'30px' }}>Contact Me</SectionTitle>
+      <FooterWrapper>
+        <LinkList>
+          <UtilityList>
+            <ExternalLinks href="tel:314-343-3432">Phone Number</ExternalLinks>
+          </UtilityList>
+          <UtilityList>
+            <ExternalLinks href="mailto:contact@jsmastery.com">
+              EmaiL
+            </ExternalLinks>
+          </UtilityList>
+        </LinkList>
+        <SocialIconsContainer>
+          <SocialContainer>
+            <SocialIcons href="https://google.com">
+              <AiFillGithub size="3rem" />
+            </SocialIcons>
+            <SocialIcons href="https://google.com">
+              <AiFillLinkedin size="3rem" />
+            </SocialIcons>
+            <SocialIcons href="https://google.com">
+              <AiFillInstagram size="3rem" />
+            </SocialIcons>
+          </SocialContainer>
+        </SocialIconsContainer>
+      </FooterWrapper>
+    </>
   );
 };
 
