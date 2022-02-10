@@ -1,7 +1,8 @@
 import Link from "next/link";
 import React from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { DiCssdeck } from "react-icons/di";
+import { SiFacebook } from "react-icons/si";
 
 import {
   Container,
@@ -16,12 +17,18 @@ const Header = () => (
   <Container>
     <Div1>
       <Link href="/">
-        <a style={{ display: "flex", alignItems: "center", color: "white" }}>
-          <DiCssdeck size="3rem" />{" "}
-          <span>
-            {" "}
-            <strong>EhtishaM Ul HaQ</strong>
-          </span>
+        <a
+          style={{
+            display: "flex",
+            alignItems: "center",
+            color: "#0073B2",
+            marginBottom: "35px",
+          }}
+        >
+          <DiCssdeck size="3rem" />
+          <NavLink>
+            <strong style={{color:'grey'}}>EhtishaM Ul HaQ</strong>
+          </NavLink>
         </a>
       </Link>
     </Div1>
@@ -43,14 +50,14 @@ const Header = () => (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href="https://google.com">
-        <AiFillGithub size="3rem" />
+      <SocialIcons color="#24292E" href="https://google.com">
+        <AiFillGithub size="2.7rem" />
       </SocialIcons>
-      <SocialIcons href="https://google.com">
-        <AiFillLinkedin size="3rem" />
+      <SocialIcons color="#0073B2" href="https://google.com">
+        <AiFillLinkedin size="2.7rem" />
       </SocialIcons>
-      <SocialIcons href="https://google.com">
-        <AiFillInstagram size="3rem" />
+      <SocialIcons color="#1877F2" href="https://google.com">
+        <SiFacebook size="2.7rem" />
       </SocialIcons>
     </Div3>
   </Container>
