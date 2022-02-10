@@ -69,6 +69,7 @@ export const CarouselItemTitle = styled.h4`
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
+  padding-left: 16px;
   letter-spacing: 0.02em;
   display: flex;
   /* This gradient is different due to the size of the Title container, it must transition sooner to be visible on the text */
@@ -78,7 +79,7 @@ export const CarouselItemTitle = styled.h4`
     rgba(255, 255, 255, 0.66) 30.15%
   );
   -webkit-background-clip: text;
-  -webkit-text-fill-color: grey;
+  -webkit-text-fill-color: white;
   margin-bottom: 8px;
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -112,8 +113,9 @@ export const CarouselItemText = styled.p`
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: grey;
+  color: white;
   padding-right: 16px;
+  padding-left: 16px;
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 12px;
@@ -128,7 +130,6 @@ export const CarouselItemText = styled.p`
 `;
 export const CarouselButtons = styled.div`
   width: 288px;
-
   display: none;
   visibility: hidden;
 
