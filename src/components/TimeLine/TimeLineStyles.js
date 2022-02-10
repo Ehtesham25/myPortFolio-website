@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CarouselContainer = styled.ul`
   max-width: 1040px;
-  background: grey;
+  background: #8A8989;
   padding: 0rem;
   list-style: none;
   display: flex;
@@ -32,7 +32,7 @@ export const CarouselContainer = styled.ul`
   }
 `;
 export const CarouselMobileScrollNode = styled.div`
-  background-color: grey;
+  background-color: #8A8989;
   border-radius: 8px;
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
