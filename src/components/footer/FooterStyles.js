@@ -57,6 +57,7 @@ export const SocialIconsContainer = styled.div`
     display: flex;
     width: 100%;
     flex-direction: column;
+    padding-top:50px;
   }
 `;
 
@@ -127,9 +128,9 @@ export const LinkList = styled.ul`
     gap: 16px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 100%;
-    padding: 32px 4px 16px;
-    gap: 5px;
+    width: 80%;
+    flex-direction: column;
+    display: flex;
   }
 `;
 
@@ -168,9 +169,9 @@ export const ExternalLinks = styled.a`
   padding: 1rem 1.5rem;
   background: #6b3030;
   border-radius: 50px;
-  width: 90%;
-  align-item:center;
-  text-align:center;
+  width: 110rem;
+  align-item: center;
+  text-align: center;
   transition: 0.5s;
   &:hover {
     background: #801414;
