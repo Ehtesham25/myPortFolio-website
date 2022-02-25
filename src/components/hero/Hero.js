@@ -18,10 +18,10 @@ const Hero = (props) => (
           Wellcome to My Portfolio
         </SectionTitle>
         <SectionText>
-          Hello, I am a professional MERN Stack Developer for 1+ year in the
+          Hello, I am a professional MERN Stack Developer for 1+ years in the
           field of development, my activities are always creative, of course, I
           direct it according to the project and the achievement of mutual
-          success
+          success.
         </SectionText>
         <Button onClick={props.handleClick}>
           <Link href="mailto:ehteshamulhaqkhan25@gmail.com" passHref>
